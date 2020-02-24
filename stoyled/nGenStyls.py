@@ -1,4 +1,4 @@
-from .gnrtdStyls import *
+from .genStyls import *
 
 
 def fetchFormatedTime():

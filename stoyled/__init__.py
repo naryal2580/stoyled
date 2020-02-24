@@ -1,1 +1,1 @@
-from .hrdcodStyls import *
+from .nGenStyls import *
