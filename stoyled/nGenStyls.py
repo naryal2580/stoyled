@@ -2,6 +2,12 @@ from .genStyls import *
 
 
 def fetchFormatedTime():
+    """
+    Fetch formatted time, returns current date and time in a formatted manner
+
+        Returns:
+            now (str): Formatted date and time.
+    """
     from datetime import datetime
     now = datetime.now()
     dd = str(now.day)
@@ -16,12 +22,29 @@ def fetchFormatedTime():
 
 
 def coolExit(exitCode=0, color=True):
+    """
+    Just a fancier exit
+
+        Parameters:
+            exitCode (int): Exit code
+            color (bool): Shall color be printed on halt text
+    """
     now = fetchFormatedTime()
     print(info(f'Halted [at] -> {now}', color))
     exit(exitCode)
 
 
 def coolInput(prompt='Prompt', color=True):
+    """
+    Fancy input
+
+        Parameters:
+            prompt (str): Prompt text
+            color: Shall used, while input
+        
+        Returns:
+            _input (str): Input made by the user
+    """
     try:
         if color:
             prompt = f'{ rst + white }[{ bold + purple_l }<{ rst + white }]{ rst + purple_l } { prompt }: { rst + white + italic }'

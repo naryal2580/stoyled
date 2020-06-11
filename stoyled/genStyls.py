@@ -38,6 +38,3 @@ def retnFunc(_format):
 for _format in formats:
     func = retnFunc(_format)
     exec(func)
-
-
-del _format, func, formats, STYLS, COLRS, genEscSeqs, retnFunc
