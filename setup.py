@@ -5,7 +5,7 @@ with open("./README.md") as f:
 
 setup(
     name='stoyled',
-    version='0.7',
+    version='0.8',
     author="Captain Nick Lucifer",
     author_email="naryal2580@gmail.com",
     url="https://github.com/naryal2580/stoyled",
@@ -18,6 +18,7 @@ setup(
     classifiers=[
          "Programming Language :: Python :: 3",
          "License :: OSI Approved :: MIT License",
+         "Environment :: Console",
          "Operating System :: OS Independent",
      ],
     python_requires='>=3',

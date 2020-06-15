@@ -1,4 +1,4 @@
-from .genStyls import *
+from .generateStyles import *
 
 
 def fetchFormatedTime():
@@ -55,10 +55,10 @@ def coolInput(prompt='Prompt', color=True):
             print(rst, end='')
         return _input
     except KeyboardInterrupt:
-        print('Null'+rst)
+        print('\b\b'+bold+italic+'Null'+rst)
         print(bad('Exitting -> recvd. SIGINT'))
         coolExit(1)
     except EOFError:
-        print('Null'+rst)
+        print(italic+'Null'+rst)
         print(bad('Terminating -> EOFError'))
         coolExit(1)

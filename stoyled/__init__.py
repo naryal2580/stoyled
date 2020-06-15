@@ -1,21 +1,43 @@
-from .nGenStyls import info, \
-                       good, \
-                       warn, \
-                       bad, \
-                       coolInput, \
-                       takenInput, \
-                       coolExit, \
-                       fetchFormatedTime
+from .moreStyles import info, \
+                        good, \
+                        warn, \
+                        bad, \
+                        coolInput, \
+                        takenInput, \
+                        coolExit, \
+                        fetchFormatedTime, \
+                        bold, \
+                        dim, \
+                        italic, \
+                        uline, \
+                        blink, \
+                        normal, \
+                        invert, \
+                        hidden, \
+                        strike, \
+                        red, \
+                        green, \
+                        yellow, \
+                        blue, \
+                        purple, \
+                        cyan, \
+                        white, \
+                        red_l, \
+                        green_l, \
+                        yellow_l, \
+                        blue_l, \
+                        purple_l, \
+                        cyan_l, \
+                        white_l
+                    
 
-
-from .nGenStyls import *
 from os import name
 
 if name != 'posix':
     from ctypes import windll
     windll.kernel32.SetConsoleMode(windll.kernel32.GetStdHandle(-11), 7)
 
-__version__ = "0.7"
+__version__ = "0.8"
 __author__ = "naryal2580"
 
-del escSeqs, genStyls, nGenStyls, func, formats, STYLS, COLRS, genEscSeqs, retnFunc
+del generateStyles, moreStyles, escapeSequences
