@@ -3,6 +3,12 @@ Stoyled
 
 Standard Output Styled
 """
+
+
+__version__ = "0.9"
+__author__ = "naryal2580"
+
+
 from .moreStyles import info, \
                         good, \
                         warn, \
@@ -33,8 +39,9 @@ from .moreStyles import info, \
                         blue_l, \
                         purple_l, \
                         cyan_l, \
-                        white_l
-                    
+                        white_l, \
+                        rst
+
 
 from os import name
 
@@ -44,7 +51,5 @@ if name != 'posix':
     windll.kernel32.SetConsoleMode(windll.kernel32.GetStdHandle(-11), 7)
     del windll
 
-__version__ = "0.8"
-__author__ = "naryal2580"
 
 del generateStyles, moreStyles, escapeSequences, name

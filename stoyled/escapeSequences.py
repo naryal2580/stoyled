@@ -50,7 +50,10 @@ _COLORS = (
             'white'
         )
 
+
 exec(_generateEscapeSequence(_STYLES))
 exec(_generateEscapeSequence(_COLORS, 3))
 exec(_generateEscapeSequence(_COLORS, 9))
+
+
 rst = '\x1b[0m'  # Fixed escape sequence :p

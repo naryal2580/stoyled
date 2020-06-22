@@ -17,7 +17,7 @@ def fetchFormatedTime():
     MM = str(now.minute)
     SS = str(now.second)
     now = (dd, mm, yyyy, HH, MM, SS)
-    now = now[0]+'.'+now[1]+'.'+now[2]+' '+now[3]+':'+now[4]+':'+now[5]
+    now = now[0] + '.' + now[1] + '.' + now[2] + ' ' + now[3] + ':' + now[4] + ':' + now[5]
     return now
 
 
@@ -41,7 +41,7 @@ def coolInput(prompt='Prompt', color=True):
         Parameters:
             prompt (str): Prompt text
             color: Shall used, while input
-        
+
         Returns:
             _input (str): Input made by the user
     """
@@ -55,10 +55,10 @@ def coolInput(prompt='Prompt', color=True):
             print(rst, end='')
         return _input
     except KeyboardInterrupt:
-        print('\b\b'+bold+italic+'Null'+rst)
+        print('\b\b' + bold + italic + 'Null' + rst)
         print(bad('Exitting -> recvd. SIGINT'))
         coolExit(1)
     except EOFError:
-        print(italic+'Null'+rst)
+        print(italic + 'Null' + rst)
         print(bad('Terminating -> EOFError'))
         coolExit(1)
